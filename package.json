@@ -40,7 +40,6 @@
     }
   },
   "sapux": [
-    "app/books",
     "app/books"
   ]
 }
