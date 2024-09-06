@@ -1,7 +1,7 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Fri Sep 06 2024 13:16:36 GMT+0530 (India Standard Time)|
+|**Generation Date and Time**<br>Fri Sep 06 2024 14:46:31 GMT+0530 (India Standard Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.14.4|
 |**Generation Platform**<br>Visual Studio Code|
@@ -9,7 +9,7 @@
 |**Service Type**<br>Local Cap|
 |**Service URL**<br>http://localhost:4004/odata/v4/file-upload/|
 |**Module Name**<br>books|
-|**Application Title**<br>books information|
+|**Application Title**<br>Books Info|
 |**Namespace**<br>com.sap.satinfotech|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.127.2|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>Books|
-|**Navigation Entity**<br>None|
+|**Navigation Entity**<br>Attachments|
 
 ## books
 

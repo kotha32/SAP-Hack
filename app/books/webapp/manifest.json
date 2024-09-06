@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.4",
-      "toolsId": "52fcbfe1-ac93-4e80-8360-62373d1dd21d"
+      "toolsId": "9d52491c-e5d2-4561-b0e4-03344e9463a7"
     },
     "dataSources": {
       "mainService": {
@@ -93,6 +93,11 @@
           "pattern": "Books({key}):?query:",
           "name": "BooksObjectPage",
           "target": "BooksObjectPage"
+        },
+        {
+          "pattern": "Books({key})/Attachments({key2}):?query:",
+          "name": "AttachmentsObjectPage",
+          "target": "AttachmentsObjectPage"
         }
       ],
       "targets": {
@@ -129,19 +134,24 @@
             "settings": {
               "editableHeaderContent": false,
               "contextPath": "/Books",
-              "content": {
-                "header": {
-                  "actions": {
-                    "upload": {
-                      "press": "com.sap.satinfotech.books.ext.upload.upload.upload",
-                      "visible": true,
-                      "enabled": true,
-                      "requiresSelection": false,
-                      "text": "upload"
-                    }
+              "navigation": {
+                "Attachments": {
+                  "detail": {
+                    "route": "AttachmentsObjectPage"
                   }
                 }
               }
+            }
+          }
+        },
+        "AttachmentsObjectPage": {
+          "type": "Component",
+          "id": "AttachmentsObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": false,
+              "contextPath": "/Books/Attachments"
             }
           }
         }
