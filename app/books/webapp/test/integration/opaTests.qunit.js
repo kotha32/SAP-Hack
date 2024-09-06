@@ -1,16 +1,16 @@
 sap.ui.require(
     [
         'sap/fe/test/JourneyRunner',
-        'com/sap/satinfotech/books/test/integration/FirstJourney',
-		'com/sap/satinfotech/books/test/integration/pages/BooksList',
-		'com/sap/satinfotech/books/test/integration/pages/BooksObjectPage',
-		'com/sap/satinfotech/books/test/integration/pages/AttachmentsObjectPage'
+        'books/test/integration/FirstJourney',
+		'books/test/integration/pages/BooksList',
+		'books/test/integration/pages/BooksObjectPage',
+		'books/test/integration/pages/AttachmentsObjectPage'
     ],
     function(JourneyRunner, opaJourney, BooksList, BooksObjectPage, AttachmentsObjectPage) {
         'use strict';
         var JourneyRunner = new JourneyRunner({
             // start index.html in web folder
-            launchUrl: sap.ui.require.toUrl('com/sap/satinfotech/books') + '/index.html'
+            launchUrl: sap.ui.require.toUrl('books') + '/index.html'
         });
 
        

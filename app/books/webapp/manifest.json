@@ -1,7 +1,7 @@
 {
   "_version": "1.59.0",
   "sap.app": {
-    "id": "com.sap.satinfotech.books",
+    "id": "books",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
       "version": "1.14.4",
-      "toolsId": "9d52491c-e5d2-4561-b0e4-03344e9463a7"
+      "toolsId": "0193d7a2-5de5-456a-b3ff-f5b5150ac311"
     },
     "dataSources": {
       "mainService": {
@@ -61,7 +61,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "com.sap.satinfotech.books.i18n.i18n"
+          "bundleName": "books.i18n.i18n"
         }
       },
       "": {
@@ -138,6 +138,19 @@
                 "Attachments": {
                   "detail": {
                     "route": "AttachmentsObjectPage"
+                  }
+                }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "upload": {
+                      "press": "books.ext.upload.upload.Upload",
+                      "visible": true,
+                      "enabled": true,
+                      "requiresSelection": false,
+                      "text": "Upload"
+                    }
                   }
                 }
               }
