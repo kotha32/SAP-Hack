@@ -128,7 +128,20 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/Books"
+              "contextPath": "/Books",
+              "content": {
+                "header": {
+                  "actions": {
+                    "upload": {
+                      "press": "com.sap.satinfotech.books.ext.upload.upload.upload",
+                      "visible": true,
+                      "enabled": true,
+                      "requiresSelection": false,
+                      "text": "upload"
+                    }
+                  }
+                }
+              }
             }
           }
         }
