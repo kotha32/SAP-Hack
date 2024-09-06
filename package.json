@@ -1,0 +1,46 @@
+{
+  "name": "SAP-HACK",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/postgres": "^1.10.0",
+    "@sap/cds": "^8.1.1",
+    "@sap/cds-dk": "^8.1.2",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.6",
+    "@cap-js/sqlite": "^1",
+    "@sap/ux-specification": "^1.124.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-fileupload": "cds watch --open fileupload/webapp/index.html?sap-ui-xx-viewCache=false",
+    "watch-books": "cds watch --open books/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "impl": "@cap-js/postgres",
+        "pool": {
+          "max": 20
+        }
+      },
+      "auth": {
+        "[production]": {
+          "strategy": "JWT"
+        },
+        "[test]": {
+          "strategy": "mock"
+        }
+      }
+    }
+  },
+  "sapux": [
+    "app/books",
+    "app/books"
+  ]
+}
